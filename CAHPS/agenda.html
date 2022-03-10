@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=Edge">
+  <link rel="shortcut icon" href="favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <title>CAHPS 2022</title>
+  <link rel="stylesheet" href="vendorlibs/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/sops.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="vendorlibs/font-awesome-pro/css/all.css">
+  <link rel="stylesheet" href="vendorlibs/normalize.min.css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
+
+
+
+ <script type="module">
+
+     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js";
+     import { getAuth, signInWithEmailAndPassword, onAuthStateChanged, setPersistence, browserSessionPersistence  } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-auth.js";
+
+     const firebaseConfig = {
+       apiKey: "AIzaSyC-L2JXVwJeVn9CJ7M2uiSwoqpe_rGyiE4",
+       authDomain: "cahps-westat.firebaseapp.com",
+       projectId: "cahps-westat",
+       storageBucket: "cahps-westat.appspot.com",
+       messagingSenderId: "770581909318",
+       appId: "1:770581909318:web:9c0d95da948686d40ddf47",
+       measurementId: "G-KMBQM6N82B"
+     };
+
+     const app = initializeApp(firebaseConfig);
+     const auth = getAuth();
+
+     onAuthStateChanged(auth, (user) => {
+       if (user){
+         console.log("user logged in");//, user);
+       }else{
+         location.pathname = location.pathname.replace("agenda", "index");
+       }
+     });
+
+
+     window.signin = ()=>{
+       setPersistence(auth, browserSessionPersistence)
+       .then(() => {
+         return signInWithEmailAndPassword(auth, "elizabethrodricks@westat.com", "testit")
+           .then((userCredential) => {
+             console.log("gredentials", userCredential);
+           })
+           .catch((error) => {
+             console.log("error", error);
+           })
+       })
+     }
+
+
+     console.log(app, auth);
+   </script>
+<style>
+header {
+  /* background: rgb(8,73,126);
+  background: linear-gradient(90deg, rgba(8,73,126,1) 0%, rgba(18,103,142,1) 19%, rgba(25,123,153,1) 37%); */
+  /* padding: 1em 1em 1em 2em; */
+  height: auto;
+  min-height: 46px;
+  background: #50ac48;
+}
+@media (min-width: 48em){
+  .navbar {
+    display: -webkit-box;
+    display: flex;
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+    position: relative;
+    z-index: 10;
+  }
+  .navbar div {
+    display: -webkit-box;
+    display: flex;
+  }
+  .navbar .link {
+    width: auto;
+    min-width: 92px;
+  }
+
+}
+
+.navbar {
+  position: relative;
+  min-height: 45px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+.start {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 80%;
+  padding: 1em 1em 1em 2em;
+  /* background: linear-gradient(90deg, rgba(8,73,126,1) 0%, rgba(18,103,142,1) 19%, rgba(25,123,153,1) 37%); */
+  min-height: 46px;
+  background: #532683;
+  top: -1px;
+}
+.brand {
+  display: inline-block;
+  margin-right: 1em;
+  text-decoration: none;
+}
+.start:after {
+  width: 110%;
+  background: #532683;
+  position: absolute;
+  height: 100%;
+  content: ' ';
+  left: -2%;
+  top: 0;
+  transform: skew(30deg);
+  -webkit-box-shadow: 0px 0px 27px -2px rgba(0,0,0,0.54);
+  -moz-box-shadow: 0px 0px 27px -2px rgba(0,0,0,0.54);
+  box-shadow: 0px 0px 27px -2px rgba(0,0,0,0.54);
+}
+
+.abso {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  padding: 1em 1em 1em 2em;
+  max-width: 20%;
+  min-height: 46px;
+}
+.navbar .link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0em 1em;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  padding-top: .2em;
+}
+
+footer {
+  /* background: #1a2a57; */
+  padding: 12px 0px;
+  background:  #532683;
+  height: 70px;
+}
+.main-wrapper {
+  min-height: inherit;
+  width: 100%;
+  position: relative;
+  background-color: #ffffff;
+  background-image: none;
+  padding-top: 2%
+}
+
+/* .greenline{
+height:100%;
+width:1px;
+background: #50ac48
+} */
+
+.line {
+  height:80vh;
+  border-right:1px solid #1caece
+}
+
+.logo{
+  max-width: 70%;
+  margin-bottom: 1em;
+  padding: 0;
+  margin-left: -2em;
+}
+
+@media (min-width: 1200px) {
+  .col-lg-offset-1 {
+    margin-left:3%;
+  }
+}
+
+h1{
+  color:#532683;
+  font-weight:600;
+  font-size:40px
+}
+
+h3 {
+  color:#532683;
+  margin-top: 0em;
+  font-weight:600;
+  font-size:2em;
+  position: relative;
+}
+
+.vertical{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2em 2em;
+  margin-left: 1em;
+
+}
+p, body {
+  color:#404040;
+}
+
+.vertical p{
+  max-width: 33em;
+  margin: 1em 0em;
+  font-size: 16px;
+
+}
+
+.strong{
+  font-weight:600;
+  color:#343a40;
+  font-size: 16px;
+
+}
+.auth-control.access {
+  font-size: 14px;
+  border: none;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.15), 0px 0px 10px rgba(0,0,0,.1);
+  margin: 12px 0px 20px;
+}
+
+#passw{
+  padding:0;
+  margin:0
+}
+.auth-control {
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 4px);
+  padding: 2rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 1rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  max-width: 260px;
+  text-align: center;
+  min-width: 240px;
+  margin: 2em 0em !important;
+}
+
+#myModal .form-control {
+  border: auto;
+  border: 1px solid #ccc;
+}
+
+#myModal .modal-header {
+  padding: 15px;
+  /* border-bottom: 1px solid #19497b; */
+  margin-left: 2em;
+  margin-right: 2em;
+  padding-bottom: 0px;
+  border-bottom: 1px solid #a7a7a7
+}
+#myModal h4.navy {
+
+  color: #532683
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #404040;
+  font-size: 18px;
+}
+
+.btn-login:active, .btn-login:focus, .btn-login:hover {
+  color: #532683;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.15), 0px 0px 10px rgba(0,0,0,.1);
+}
+.blueColor{
+  color:#00467f;
+  font-size:14px;
+}
+html{
+  overflow-x: hidden;
+}
+
+/* @media (min-width: 992px) and (max-width:1199px){
+.col-md-offset-1 {
+margin-left: 2%;
+}
+}
+
+@media (max-width:991px){
+.logo {
+max-width: 90%;
+margin-bottom: 1em;
+padding: 0;
+margin-left: -2em;
+}
+} */
+
+@media (max-width:767px){
+  .vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em 1em;
+  }
+  .line {
+    height:auto;
+  }
+}
+
+.across{
+  margin-top:1em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.blueColor{
+  color:#532683 !important
+}
+
+.mb-0{
+  margin-bottom:0em
+}
+
+.link {
+  color: #532683;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+
+
+}
+
+.link {
+  position: relative;
+  display: inline-block;
+  margin-left: -.5rem;
+  padding-left: 0.5rem;
+
+}
+
+.link:after {
+  content: "";
+  position: absolute;
+  left: 0.5rem;
+  top: calc(100% + 0.15rem);
+  width: 0;
+  height: 1px;
+  background-color: #532683;
+  transition: width 0.3s ease-in-out;
+}
+
+.link:hover:after,
+.link:focus:after {
+  width: calc(100% - 0.5rem);
+}
+
+main {
+  min-height: calc(95vh - 60px);
+  position: relative;
+}
+sup {
+  top: -.5em;
+  color: #532683;
+  font-weight: 800;
+}
+
+
+.btn-login p {
+  line-height: 1;
+  font-size: 19px;
+  font-weight: 600 !important;
+}
+
+#download{
+  max-width:600px !important;
+  margin:0 !important
+}
+
+.across{
+  display:flex;justify-content:flex-end;align-items:center
+}
+
+.menu-buttons-list li{
+  -webkit-transition: transform .5s ease-in-out;
+  -moz-transition: transform .55s ease-in-out;
+  -ms-transition: transform .5s ease-in-out;
+}
+
+.menu-buttons-list {
+    padding: 1em 1em 5em 1em;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 9rem;
+  z-index: 77;
+  background: #532683;
+  color: white;
+
+  height: 4.5rem;
+  width: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  font-size: 1.25rem;
+  box-shadow: 0 0 7px rgba(0,0,0,.2);
+  opacity: 0;
+  visibility: hidden;
+}
+.back-to-top:hover i, .back-to-top:focus i {
+  animation: toTop 0.6s ease-in-out 0s infinite alternate;
+}
+
+.back-to-top i {
+  transition: all 0.4s;
+  font-size: 45px;
+}
+@keyframes toTop {
+  0% {
+    margin-bottom: -0.25rem;
+    opacity: 0.72;
+  }
+
+  100% {
+    margin-bottom: 0.25rem;
+    opacity: 1;
+  }
+}
+
+.whiteButton{
+  background:white !important;
+  border:3px solid #532683 !important;
+
+}
+
+.whiteButton p.white{
+  color:#532683 !important
+}
+
+.whiteButton:hover{
+  background:#532683  !important;
+  border:3px solid #532683 !important;
+
+}
+
+.whiteButton:hover p.white{
+  color:white !important
+}
+
+.quoteBubble p.small.purple.strong{
+  font-size:16px
+}
+
+.quoteBubble  span.purple.strong{
+  font-size: 15px;
+}
+
+.menu-buttons-list li .btn-text {
+  position: relative;
+  text-align: center;
+  min-width: 100%;
+  color: #3b7d34;
+  font-weight: 500;
+  padding-top: 12px;
+}
+
+.purple {
+  color: #3b7d34;
+}
+.purple:hover {
+  color: #3b7d34 !important;
+}
+
+
+.menu-buttons-list li{
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-buttons-list li:hover,
+.menu-buttons-list li:focus-within {
+  transform: scale(1.1);
+}
+
+.objective {
+  background-image: url(../img/objectives_btn.svg);
+}
+
+.objective:hover,
+.objective:focus {
+  /* background-image: url(../img/objectives_btn-hover.svg); */
+  transform: scale(1.2);
+}
+
+.agenda {
+  background-image: url(../images/agenda.svg);
+  min-width: 12em;
+  min-height: 7em;
+}
+/* .agenda:hover,
+.agenda:focus {
+transform: scale(1.2);
+} */
+
+.speakers {
+  background-image: url(../images/speakers.svg);
+}
+
+.back-to-top{
+  background: #50ac48;
+
+}
+
+.modal-body {
+  background: #4cad42;
+  border-radius: 1rem;
+  margin: 0px 1em;
+}
+
+.bar {
+
+  opacity:1;
+
+}
+
+.moreMargin{
+      margin: 5em 0em;
+}
+
+
+</style>
+
+
+
+</head>
+<body>
+  <header>
+
+    <nav class="navbar">
+      <div class="start">
+
+      </div>
+
+      <div class="end abso">
+
+      </div>
+
+
+    </nav>
+
+  </header>
+  <div class="container-fluid overflow-hidden position-relative">
+
+    <section class="block0">
+      <div class="hero-img-container heros" id="Home">
+        <img src="../images/cahps_logo.svg" class="img-responsive logo"  alt="CAHPS logo">
+        <div class="hero-img">
+          <div class="landing-panel">
+
+            <h3 class="text-center mb-0">Understanding CAHPS Surveys: A Primer for New Users</h3>
+            <h4 style="font-size:1.5em;margin:.75em 0em 1em 0em;font-weight:600">Wednesday, January 19th, 2022</h4>
+            <p>This AHRQ webcast will provide an overview of CAHPS surveys, explain how they focus on patients’ priorities, and build on current research in survey development and administration. Speakers will also discuss how organizations use survey results.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="menu-buttons p-2">
+      <div class="bar"></div>
+      <ul class="menu-buttons-list">
+        <!-- <li tabindex="0" data-target="#Guide" class="objective"></li> -->
+        <li data-target="#FAQ">
+          <div tabindex="0" data-target="#FAQ" class="agenda btn-icon"></div>
+          <div class="btn-text">Agenda</div>
+        </li>
+
+        <li data-target="#Privacy">
+          <div tabindex="0" data-target="#Privacy" class="speakers btn-icon"></div>
+          <div class="btn-text">Speakers</div>
+        </li>
+        <li data-target="#Contact">
+          <div tabindex="0" data-target="#Contact" class="materials btn-icon"></div>
+          <div class="btn-text">Materials</div>
+        </li>
+
+
+      </ul>
+    </div>
+
+
+    <section class="block5">
+      <div class="hero-img-agenda-bottom"></div>
+      <div id="FAQ" class="landing-sec heros">
+        <div class="guide-overlay container">
+          <!-- <h2 class="landing-sec-H text-center purple">An Update on the CAHPS Patient Narrative Item Sets</h2> -->
+
+
+          <div class="agendaBubble">
+
+
+            <h3>Webcast Agenda</h3>
+
+
+
+
+            <div class="whiteBubble">
+              <!-- <a class="join" href="https://secure-web.cisco.com/1ifFlKjk_jDzOKQDlNpMDWMlRUe52V9z71UkMb6wD7jMKc3MPosm7J46CLU2UxuF5pKW9O7w6FE1Ly9BbUGyySt4cPN6oJuUWQKu4iYXSLqevWNVQfRvLEvjULCHxDADjYq7G6sk5XDDuFyX4uTl20cOhd96TJmUfY1eyo2T2xmq-jjP-EjKwvWRKII_BM7hCturvO6gZWm_5F1g7rE-6yvIYyNnB09_SV6aoZ_bTJpkkrCouNatUEexO5dkJVXT-/https%3A%2F%2Flnks.gd%2Fl%2FeyJhbGciOiJIUzI1NiJ9.eyJidWxsZXRpbl9saW5rX2lkIjoxMDEsInVyaSI6ImJwMjpjbGljayIsImJ1bGxldGluX2lkIjoiMjAyMTEwMjcuNDc5NjA3NTEiLCJ1cmwiOiJodHRwczovL3d3dy5haHJxLmdvdi9jYWhwcy9zdXJ2ZXlzLWd1aWRhbmNlL2l0ZW0tc2V0cy9lbGljaXRhdGlvbi9pbmRleC5odG1sIn0.k_MLz4phmF33evmX7nzhYV57DJQrwZ3EPs534x-lF-g%2Fs%2F908062531%2Fbr%2F114708204506-l" target="_blank">Join Session</a> -->
+
+              <!-- <div class="tan">
+              <h3 class="charcoal mb-0" style="font-size:18px">
+              <span class="purple">11:00 – 11:15 a.m.</span> Welcome & Goals of the Meeting</h3>
+            </div> -->
+            <!-- <p style="margin-bottom:-1em;margin-top:1em;">Speakers:</p> -->
+            <ul>
+
+
+              <li>Welcome from AHRQ: <span class="purple"
+                data-toggle="modal"
+                data-target="#exampleModalCenter"
+                data-cid="0"
+                data-singleview="true"
+                >Caren Ginsberg, PhD</span>, Agency for Healthcare Research and Quality
+              </li>
+
+
+
+
+
+              <li>What is patient experience and how does CAHPS measure it?
+                <span
+                class="purple"
+                data-toggle="modal"
+                data-target="#exampleModalCenter"
+                data-cid="1"
+                data-singleview="true"
+                >Stephanie Fry</span>, Westat
+
+
+              </li>
+
+              <li>How Are CAHPS Survey Results Used?
+                <span class="purple"
+                data-toggle="modal" data-target="#exampleModalCenter" data-cid="2"
+                data-singleview="true">
+                Dale Shaller, M.P.A</span>, Shaller Consulting Group</li>
+
+                <li>Webcast Moderator
+                  <span
+                  class="purple"
+                  data-toggle="modal"
+                  data-target="#exampleModalCenter"
+                  data-cid="1"
+                  data-singleview="true"
+                  >Stephanie Fry</span>, Westat
+
+
+                </li>
+
+
+              </ul>
+
+
+    </div>
+
+
+
+  </div>
+
+
+
+
+</div>
+</div>
+</section>
+
+
+
+
+<section class="block20" id="Privacy">
+
+
+  <div class="position-relative pt-4 pb-4 moreMargin">
+    <div class="bar"></div>
+    <h3 class="mb-0 text-center">Speakers</h3>
+    <p class="text-center mt-2 strong position-relative">
+      Select a speaker to view more about them.
+    </p>
+  </div>
+  <div class="heros mt-5">
+    <div class="container guide-overlay">
+
+
+
+      <div class="row">
+
+        <div
+        class="
+        col-lg-4 col-md-6 col-sm-6 col-xs-12
+        d-flex
+        flex-column
+        align-items-center
+        "
+        >
+        <button
+        type="button"
+        class="btn text-center"
+        data-toggle="modal"
+        data-target="#exampleModalCenter"
+        data-cid="0"
+        >
+        <img src="img/ginsberg.jpg" class="img-responsive" /><br />
+        <p class="purple">Caren Ginsberg</p>
+      </button>
+    </div>
+
+
+    <div
+    class="
+    col-lg-4 col-md-6 col-sm-6 col-xs-12
+    d-flex
+    flex-column
+    align-items-center
+    "
+    >
+    <button
+    type="button"
+    class="btn text-center"
+    data-toggle="modal"
+    data-target="#exampleModalCenter"
+    data-cid="1"
+    >
+    <img src="img/steph.jpg" class="img-responsive" /><br />
+    <p class="purple">Stephanie Fry</p>
+  </button>
+</div>
+
+
+
+
+
+<div
+class="
+col-lg-4  col-md-6 col-sm-6 col-xs-12
+d-flex
+flex-column
+align-items-center
+"
+>
+<button
+type="button"
+class="btn text-center"
+data-toggle="modal"
+data-target="#exampleModalCenter"
+data-cid="2"
+>
+<img src="img/shaller.jpg" class="img-responsive" /><br />
+<p class="purple">Dale Shaller</p>
+</button>
+</div>
+
+
+<!-- <div
+class="
+col-lg-5 col-md-6 col-sm-6 col-xs-12
+d-flex
+flex-column
+align-items-center
+"
+>
+<button
+type="button"
+class="btn text-center"
+data-toggle="modal"
+data-target="#exampleModalCenter"
+data-cid="3"
+>
+<img src="img/Joann.jpg" class="img-responsive" /><br />
+<p class="purple">Joann Sorra</p>
+</button>
+</div> -->
+
+
+</div>
+</div>
+</div>
+<!-- <div class="hero-img-guide"></div> -->
+</section>
+
+
+<section id="Contact">
+
+  <div class="position-relative pt-4 pb-4">
+    <div class="bar"></div>
+    <h3 class="mb-4 mt-4 text-center">Materials</h3>
+
+  </div>
+
+
+
+  <div class="heros mt-5 mb-5">
+
+
+    <div class="row">
+
+      <div class="col-lg-4 offset-lg-2 col-md-12 offset-md-0">
+
+        <div class="across mb-3">
+
+          <img src="img/pdf-icon.svg" class="img-responsive" style="height:3.2em;margin-right:1rem">
+
+
+          <a class="mt-2 btn-login" id="download"
+          href="img/Understanding CAHPS Surveys Slides_1.18.22.pdf"
+          target="_blank">
+          <p class="white mb-0">Download Slides <i class="far fa-arrow-to-bottom"></i></p>
+        </a>
+
+      </div>
+
+      <div class="across mb-3">
+
+        <img src="img/pdf-icon.svg" class="img-responsive" style="height:3.2em;margin-right:1rem">
+
+        <a class="mt-2 btn-login" id="download"
+        href="img/cahps-program-brief.pdf"
+        target="_blank">
+        <p class="white mb-0" style="">Download CAHPS Program Brief <i class="far fa-arrow-to-bottom"></i></p>
+      </a>
+
+    </div>
+
+
+    </div>
+
+    <div class="col-lg-4 col-md-12">
+
+
+      <ul>
+
+
+        <li>AHRQ/CAHPS website: <a class="purple" target="_blank" href="https://www.ahrq.gov/cahps/index.html">https://www.ahrq.gov/cahps/index.html</a>
+        </li>
+
+        <li>CAHPS Database site: <a class="purple" target="_blank" href="https://cahpsdatabase.ahrq.gov/default_landing.aspx">https://cahpsdatabase.ahrq.gov/default_landing.aspx</a>
+        </li>
+
+        <li>AHRQ Data Tools: <a class="purple" target="_blank" href="https://datatools.ahrq.gov/cahps">https://datatools.ahrq.gov/cahps</a>
+        </li>
+
+        <li>Your CAHPS Survey Tool: <a class="purple" target="_blank" href="https://yourcahps.rand.org/">https://yourcahps.rand.org/</a>
+        </li>
+
+
+
+
+
+</ul>
+
+
+  </div>
+
+
+</div>
+
+
+</div>
+</section>
+
+<!-- Modal -->
+<div
+class="modal"
+id="exampleModalCenter"
+tabindex="-1"
+role="dialog"
+aria-labelledby="exampleModalCenterTitle"
+aria-hidden="true"
+data-bs-backdrop="static"
+>
+<div
+class="modal-dialog modal-lg modal-dialog-centered"
+role="document"
+>
+<div class="modal-content">
+  <div class="modal-body">
+    <div class="wrapper">
+      <button
+      type="button"
+      class="close"
+      data-dismiss="modal"
+      aria-label="Close"
+      >
+      <img class="img-responsive" src="img/close_X.svg" />
+    </button>
+    <div class="carousel">
+
+      <div>
+        <div class="d-flex justify-content-center">
+          <img
+          src="img/ginsberg.jpg"
+          class="img-responsive first"
+          />
+          <div class="quoteBubble">
+            <p class="purple strong">Caren Ginsberg, PhD, CPXP</p>
+            <p class="small purple strong">Agency for Healthcare Research and Quality</p>
+
+            <p class="small">
+              <span class="purple strong">Caren Ginsberg</span> directs the
+              Agency for Healthcare Research and Quality’s (AHRQ)
+              work on the Consumer Assessment of Healthcare
+              Providers and Systems (CAHPS®) and Surveys on Patient
+              Safety Culture™ (SOPS®). An anthropologist and
+              demographer, Dr. Ginsberg has broad-based experience
+              in patient experience, patient safety, and public
+              health. In her position at AHRQ, she focuses on
+              program development, implementation, operations and
+              evaluation, with specialty in survey design and
+              development, and qualitative evaluation and
+              assessment. Previously, she held positions at the
+              Centers for Medicare and Medicaid Services (CMS),
+              Westat, and the National Quality Forum.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="d-flex justify-content-center">
+          <img src="img/steph.jpg" class="img-responsive first" />
+          <div class="quoteBubble">
+            <p class="purple strong">Stephanie Fry</p>
+            <p class="small purple strong">Senior Study Director, Consumer Assessment of Healthcare Providers and Systems (CAHPS), Westat</p>
+            <p class="small">
+              <span class="purple strong">Stephanie Fry</span> is a Westat Senior Study Director with more than 20 years of experience with patient experience surveys and data collection methodologies. She has worked as part of the CAHPS instrumentation team for nearly 15 years. Her recent research topics have included measurement of patient experience, delivery of health care services, cultural competence, and public reporting to drive informed consumer choice. Ms. Fry has a wide set of skills including survey development, cognitive testing, methodological review, data collection design, and plain language reporting. She has served as project director and subject matter expert on projects for AHRQ, CMS, OMH, HRSA, and many other Federal, state, and local agencies.
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div>
+        <div class="d-flex justify-content-center">
+          <img src="img/shaller.jpg" class="img-responsive first" />
+          <div class="quoteBubble">
+            <p class="purple strong">Dale Shaller, M.P.A</p>
+            <p class="small purple strong">Shaller Consulting Group</p>
+            <p class="small">
+              <span class="purple strong">Dale Shaller</span> has devoted nearly four decades to the design, implementation, and evaluation of health care quality measurement and improvement programs, with a special focus on listening to the voice of the patient and promoting methods for engaging consumers in managing their health and health care. He has served as a member of the Harvard and Yale CAHPS research teams for 25 years, and currently serves as the senior advisor for the national CAHPS Database which he directed for 22 years. Mr. Shaller led the technical assistance team on patient experience for the national Aligning Forces for Quality program, and is an Executive Board and founding member of the Patient Experience Policy Forum. He has served on many national health care advisory panels and is a frequent writer and presenter on health care quality and patient engagement strategies.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+<div class="back-to-top">
+  <i aria-hidden="true" class="far fa-angle-up"></i>
+</div>
+
+<footer>
+  <div class="footer-wrapper">
+
+    <a href="https://www.westat.com" target="_blank" title="Visit website"><img src="../images/white-logo.svg" alt="Westat Home page" title="Westat" class="img-wes-logo"/></a> <p class="p-wes-title t-white">An Employee-Owned Research Corporation<sup class="t-white">&reg;</sup></p></div>
+  </footer>
+
+  <!-- <div class="menu-buttons-floating">
+  <ul class="menu-buttons-floating-list">
+
+  <li tabindex="0" data-target="#FAQ"></li>
+  <li tabindex="0" data-target="#Privacy"></li>
+
+  <li tabindex="0" data-target="#Home"></li>
+</ul>
+</div> -->
+
+<!-- <div class="menu-buttons-768">
+<ul class="menu-buttons-768-list">
+
+
+<li tabindex="0" data-target="#FAQ"></li>
+<li tabindex="0" data-target="#Privacy"></li>
+<li tabindex="0" data-target="#Contact"></li>
+<li tabindex="0" data-target="#Home"></li>
+</ul>
+</div> -->
+</div>
+<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"
+></script>
+<script
+type="text/javascript"
+src="vendorlibs/bootstrap/js/bootstrap.min.js"
+></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script>
+
+
+$('.back-to-top').on('click', function() {
+  scrollfn("#overview");
+})
+
+
+$(window).scroll(function () {
+  ((window.pageYOffset || document.documentElement.scrollTop) > 100) ? $('.back-to-top').css({ opacity: 1, visibility: "visible" }) : $('.back-to-top').css({ opacity: 0, visibility: "hidden" });
+});
+
+function scrollfn(e) {
+  let $target = $(e),
+  offSet = e === "#overview" ? 0 : $target.offset().top;
+  $('html, body').stop().animate({
+    'scrollTop': offSet
+  }, 1200, 'swing');
+
+
+}
+var speakerModal = $('.carousel').slick({
+  slidesToShow: 1,
+  dots: false,
+  arrows: true,
+  centerMode: true,
+  prevArrow:
+  "<button type='button' class='slick-prev pull-left'></button>",
+  nextArrow:
+  "<button type='button' class='slick-next pull-right'></button>",
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  mobileFirst: true,
+  speed: 0,
+  useCSS: false,
+  useTransform: false,
+  waitForAnimate: false,
+  centerPadding: '12px',
+  adaptiveHeight: true,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        centerPadding: '48px',
+        adaptiveHeight: false,
+      },
+    },
+  ],
+});
+
+$('.modal').on('shown.bs.modal', function (e) {
+  $('html').addClass('modal-open');
+  var slideID = Number(e.relatedTarget.dataset.cid);
+  var singleview = e.relatedTarget.dataset.singleview;
+  speakerModal.slick('slickGoTo', slideID, false);
+  if (!!singleview) {
+    $('.slick-slider').addClass('hide-arrows');
+  }
+});
+
+$('.modal').on('hidden.bs.modal', function (e) {
+  $('html').removeClass('modal-open');
+  $('.slick-slider').removeClass('hide-arrows');
+});
+</script>
+</body>
+</html>
