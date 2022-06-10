@@ -1,0 +1,1887 @@
+.smaller {
+    font-size: 13px;
+}
+
+.noDecoration {
+    text-decoration: none;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.mt-0 {
+    margin-top: 0px !important
+}
+
+.pl-0 {
+    padding-left: 0
+}
+
+.pr-0 {
+    padding-right: 0
+}
+
+.pt-5 {
+    padding-top: 3rem
+}
+
+.pb-5 {
+    padding-bottom: 3rem
+}
+
+.pl-5 {
+    padding-left: 3rem;
+}
+
+.pr-5 {
+    padding-right: 3rem;
+}
+
+.pl-3 {
+    padding-left: 1.5rem;
+}
+
+.pl-4 {
+    padding-left: 2.5rem;
+}
+
+.pr-3 {
+    padding-right: 1.5rem;
+}
+
+.mt-1 {
+    margin-top: .5rem
+}
+
+.mt-3 {
+    margin-top: 1.5rem
+}
+
+.mb-5 {
+    margin-bottom: 3rem
+}
+
+.pb-3 {
+    padding-bottom: 1.5rem
+}
+
+.pt-3 {
+    padding-top: 1.5rem
+}
+
+.my-1 {
+    margin: .25rem 0;
+}
+
+.mb-3 {
+    margin-bottom: 1.5rem
+}
+
+.mr-5 {
+    margin-right: 3rem;
+}
+
+.mr-3 {
+    margin-right: 1.5rem;
+}
+
+.ml-3 {
+    margin-left: 1.5rem;
+}
+
+
+.mr-2 {
+    margin-right: 1.25rem;
+}
+
+.ml-2 {
+    margin-left: 1.25rem;
+}
+
+.ml-6 {
+    margin-left: 4rem;
+}
+
+.mr-6 {
+    margin-right: 4rem;
+}
+
+
+.mr-1 {
+    margin-right: 1rem;
+}
+
+.ml-1 {
+    margin-left: 1rem;
+}
+
+.mb-0 {
+    margin-bottom: 0em
+}
+
+.m-5 {
+    margin: 3rem
+}
+
+.mt-5 {
+    margin-top: 3rem;
+}
+
+.mt-4 {
+    margin-top: 2rem;
+}
+
+.mb-4 {
+    margin-bottom: 2rem;
+}
+
+.m-0 {
+    margin: 0
+}
+
+.mb-6 {
+    margin-bottom: 4rem
+}
+
+.mb-1 {
+    margin-bottom: .5rem
+}
+
+
+.mt-6 {
+    margin-top: 4rem
+}
+
+.d-flex {
+    display: flex
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.large {
+    font-size: 21px
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-end {
+    align-items: end;
+}
+
+.shadow-link {
+    margin-top: 0em
+}
+
+    .shadow-link.smallerLink {
+        max-width: 50%;
+        margin: 0 25%
+    }
+
+@media only screen and (min-width: 992px) {
+
+    .page-content {
+        padding-top: 140px;
+    }
+}
+
+
+.black {
+    color: black !important
+}
+
+.full-width-hero {
+    background: white; /*Fallback if the image fails to load*/
+    height: 450px;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+
+    .full-width-hero.students {
+        background-position: center;
+        background-image: url('https://assets.syngentaebiz.com/images/media/studentgraduate_homepage_682482508_edited_circles@2x.png');
+    }
+
+    .full-width-hero.internships {
+        background-position: center;
+        background-image: url('https://assets.syngentaebiz.com/images/media/students_internships_header_1254848893_edited_circles@2x.png');
+    }
+
+    .full-width-hero.sales {
+        background-position: center;
+        background-image: url('https://assets.syngentaebiz.com/images/media/sales_dev_Header_SBW0507_edited_circles@2x.png')
+    }
+
+    .full-width-hero.production {
+        background-position: center;
+        background-image: url('https://assets.syngentaebiz.com/images/media/prod.png')
+    }
+
+    .full-width-hero.professionals {
+        background-position: center;
+        background-image: url('https://assets.syngentaebiz.com/images/media/pro_homepage_691949286_circles@2x.png')
+    }
+
+.image1 {
+    background-position: center;
+    background-image: url('https://assets.syngentaebiz.com/images/media/prodsupply_header_mkp_7748_edited@2x.png')
+}
+
+.image2 {
+    background-position: center;
+    background-image: url('https://assets.syngentaebiz.com/images/media/pro_reserch_header_mg_8871_v2@2x.png')
+}
+
+.image3 {
+    background-position: center;
+    background-image: url('https://assets.syngentaebiz.com/images/media/pro_development_header_208a3001_edited@2x.png')
+}
+
+.image4 {
+    background-position: center;
+    background-image: url('https://assets.syngentaebiz.com/images/media/pro_digitalsolutions_header_170522_pearsonstudios@2x.png')
+}
+
+
+.image5 {
+    background-position: center;
+    background-image: url('https://assets.syngentaebiz.com/images/media/cropped-header-it.png')
+}
+
+.image6 {
+    background-position: center;
+    background-image: url('https://assets.syngentaebiz.com/images/media/professional_header_0002_brooklyn_wi_scouting_edited@2x.png')
+}
+
+.image7 {
+    background-position: center;
+    background-image: url('https://assets.syngentaebiz.com/images/media/pro_corporate_header_f1a2967@2x.png')
+}
+
+
+
+.grid p {
+    margin-top: 0em;
+    margin-bottom: 2em
+}
+
+
+.abso1 {
+    max-height: 15em;
+    position: absolute;
+    top: calc(50% - 7em);
+    left: 2%;
+}
+
+.abso2 {
+    max-height: 16em;
+    position: absolute;
+    top: calc(50% - 8em);
+    left: 43%;
+}
+
+.abso3 {
+    max-height: 15em;
+    position: absolute;
+    top: calc(50% - 7em);
+    right: 21%;
+}
+
+.abso4 {
+    max-height: 15em;
+    position: absolute;
+    top: calc(50% - 7em);
+    right: 2%;
+}
+
+.abso6 {
+    max-height: 9em;
+    position: absolute;
+    top: -2em;
+    left: 4%;
+}
+
+.abso7 {
+    left: -1em;
+    position: absolute;
+}
+
+
+.blueQuote p {
+    padding: 0em 2em
+}
+
+
+.video {
+    max-width: 70%;
+    margin: auto 15%;
+}
+
+#job {
+    background: #F6F6F6
+}
+
+.icons img {
+    margin: 2em 0em 1.5em 0em
+}
+
+.icons p {
+    text-align: center;
+    width: 100%;
+    margin: 0 0%;
+    border-bottom: 1px solid #E6E6E6;
+    padding-bottom: 1.5em;
+}
+
+#careersFAQ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 5em
+}
+
+#contact {
+    margin-top: 8em
+}
+
+.social i {
+    color: white;
+    background: #3fbbd5;
+    padding: 0.7em 0.7em;
+    border-radius: 100%;
+    font-size: 1.4em;
+    margin: 0em .35em
+}
+
+p {
+    font-weight: 100;
+}
+
+.white {
+    color: white
+}
+
+.social a:nth-child(1) i {
+    padding: 0.7em 1em;
+}
+
+.social img {
+    margin: 0em .35em
+}
+
+.social a:nth-child(4) i {
+    padding: 0.7em 0.8em;
+}
+
+.social a:nth-child(5) i {
+    padding: 0.7em 0.8em;
+}
+
+.social svg {
+    max-width: 3.4em;
+    fill: #3fbbd5;
+
+}
+
+.blueColor {
+    background: #00A0BE;
+    padding: 2em 1.7em;
+    position: relative;
+    text-align: center;
+}
+
+.person {
+    position: absolute;
+    top: -6em;
+    max-width: 12em
+}
+
+.quote {
+    margin-top: 35%
+}
+
+.content-box {
+    overflow: visible;
+}
+
+#testimonials {
+    margin-top: 10em
+}
+
+.blueQuote {
+    background: #00A0BE;
+    position: relative;
+    padding: 1em
+}
+
+.abso5 {
+    position: absolute;
+    left: 5%;
+    max-height: 8em
+}
+
+
+.greyBackground {
+    background: #F6F6F6;
+    padding: 1em 2em
+}
+
+.tradesBlocks h2 {
+    font-size: 21px !important
+}
+
+.tradesBlocks a {
+    text-decoration: underline;
+}
+
+.container {
+    overflow: visible !important
+}
+
+.circles {
+    margin: 4em 0em
+}
+
+#supply .wrapThese p {
+    max-width: 19em;
+    padding: 0em 2em;
+}
+
+#research .wrapThese p {
+    max-width: 23em;
+    padding: 0em 2em;
+}
+
+#development .wrapThese p {
+    max-width: 17em;
+    padding: 0em 1em;
+}
+
+#solutions .wrapThese p {
+    max-width: 18em;
+    padding: 0em 2em;
+}
+
+#it .wrapThese p {
+    max-width: 18em;
+    padding: 0em 2em;
+}
+
+#sales .wrapThese p {
+    max-width: 16em;
+    padding: 0em 1em;
+}
+
+
+
+
+
+.wrapThese p {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.justify-content-evenly {
+    justify-content: space-evenly
+}
+
+.efficiency,
+.manufacturing,
+.chemistry,
+.innovation,
+.portfolio,
+.route,
+.safety {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0em;
+    text-align: center;
+}
+
+
+@media (max-width: 767px) {
+
+    #in-page-nav {
+        display: none;
+    }
+
+    .page-content {
+        padding-top: 0px;
+    }
+
+    .content-box a {
+        margin-bottom: 2rem;
+    }
+
+    .team-headshot img {
+        float: unset;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .page-content {
+        padding-top: 0px;
+    }
+
+    #in-page-nav {
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+    .career-social-icons .container p {
+        width: 100%;
+        padding-right: 0 !important;
+    }
+}
+
+.nav-col #find_a_job::after {
+    background: url('../images/angle-right.png') no-repeat 0 0;
+    background-size: contain;
+    content: "";
+    display: inline-block;
+    /* -webkit-transition: all .25s;  Safari */
+    transition: all .25s;
+    width: 12px;
+    height: 12px;
+    margin-left: .2rem;
+    margin-bottom: .1rem;
+    vertical-align: middle;
+}
+
+.nav-col #find_a_job:hover::after {
+    position: relative;
+    left: .3rem;
+    -webkit-transition: all .25s;
+    Safari transition: all .25s;
+}
+
+/*********************************************************************
+IN PAGE NAVIGATION
+*********************************************************************/
+@media only screen and (min-width:992px) {
+    .nav-balencer {
+        height: 48px;
+        width: 100%;
+        display: none;
+    }
+
+    .mini-nav .navbalencer {
+        display: block;
+    }
+}
+
+.ipn-fixed #nav-blur {
+    visibility: visible;
+    top: 0;
+}
+
+.mini-nav.ipn-fixed #nav-blur {
+    top: -30px;
+}
+
+nav#in-page-nav {
+    width: 100%;
+    position: relative;
+    top: -20px;
+    -webkit-transition: all .25s ease-in-out; /* Safari */
+    transition: all .25s ease-in-out;
+    z-index: 500;
+}
+
+.ipn-fixed nav#in-page-nav {
+    position: fixed;
+    top: 105px;
+    left: 0;
+}
+
+.mini-nav.ipn-fixed nav#in-page-nav {
+    top: 75px;
+}
+
+nav#in-page-nav .container {
+    overflow: visible;
+}
+
+nav#in-page-nav a {
+    font-size: 14px;
+    color: #000;
+    font-weight: 600;
+    padding: 10px 0;
+    margin: 0 30px 0 10px;
+    text-decoration: none;
+    -webkit-transition: all .25s; /* Safari */
+    transition: all .25s;
+    position: relative;
+}
+
+nav#in-page-nav .current {
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-color: #00A0BE;
+    color: #00A0BE;
+}
+
+    nav#in-page-nav .current::after {
+        display: none;
+    }
+
+nav#in-page-nav a:first-child {
+    padding-left: 0;
+}
+
+nav#in-page-nav a:hover {
+    color: #00A0BE;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-color: #00A0BE;
+    text-decoration: none;
+}
+
+nav#in-page-nav .nav-col {
+    background-color: #E6E6E6;
+    padding: 10px;
+    text-align: center;
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.2);
+    -webkit-transition: all .5s; /* Safari */
+}
+
+/*********************************************************************
+HERO CALL OUT
+*********************************************************************/
+
+.mktbs-call-out {
+    font-size: 16px;
+    /* border-bottom: 4px solid #00A0BE; */
+}
+
+    .mktbs-call-out .mktbs-title {
+        color: #000;
+        font-size: 26px;
+        line-height: 31px;
+        font-weight: bold;
+    }
+
+    .mktbs-call-out a {
+        text-decoration: none;
+        color: white;
+        background-color: #00A0BE;
+        -webkit-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
+        box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
+        display: inline-block;
+        padding: .2rem 2rem;
+        font-weight: 700;
+    }
+
+        .mktbs-call-out a:hover {
+            color: #00A0BE;
+            background-color: white;
+            outline: 2px solid #00A0BE;
+        }
+
+    .mktbs-call-out p {
+        color: #000;
+        margin: 0 0 20px;
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+@media only screen and (min-width:1200px) {
+
+    .mktbs-call-out {
+        background-color: rgba(255,255,255);
+        width: auto;
+        margin: 0 0 0 15px;
+        position: absolute;
+        padding: 20px 20px 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        max-width: 400px;
+        background: transparent;
+    }
+
+        .mktbs-call-out .mktbs-title {
+            margin: 0 0 20px;
+            font-size: 26px;
+        }
+}
+
+
+/*********************************************************************
+  PAGE STYLES
+  *********************************************************************/
+
+p {
+    color: black;
+}
+
+.page-content h2 {
+    color: #00A0BE;
+    font-size: 26px;
+    padding: 0;
+}
+
+#psdpOverview {
+    margin-top: 0;
+}
+
+#whyWorkSmall {
+    margin-top: 10rem;
+}
+
+
+
+
+
+     a.shadow-link {
+        background-color: #00A0BE;
+        font-weight: bold;
+        display: flex;
+        font-size: 15px;
+        text-decoration: none;
+        -webkit-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
+        box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
+        padding: .5rem 1rem;
+        color: white;
+        min-width: 8rem;
+        justify-content: center;
+    }
+
+        a.shadow-link:hover {
+            color: rgb(0,181,216);
+            background-color: white;
+            outline: 2px solid rgb(0,181,216);
+        }
+
+.page-break {
+    padding: 1rem 0rem 2rem 0rem;
+    margin: 0rem 0;
+}
+
+    .page-break .container {
+        text-align: justify;
+        text-align-last: justify;
+    }
+
+    .page-break p {
+        color: white;
+    }
+
+    .page-break .container * {
+        display: inline-block;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .page-break .container a {
+        background-color: white;
+        color: #00A0BE;
+        font-size: 15px;
+        padding: .5rem 2rem;
+    }
+
+        .page-break .container a:hover {
+            background-color: #00A0BE;
+            color: white;
+            outline: 2px solid white;
+        }
+
+@media screen and (max-width:768px) {
+    .page-break .container * {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .page-break .container {
+        text-align: center;
+        text-align-last: center;
+    }
+}
+
+.career-social-icons {
+    margin: 0;
+}
+
+    .career-social-icons p {
+        vertical-align: middle;
+        font-size: 22px;
+        font-weight: bold;
+        color: #00A0BE;
+    }
+
+    .career-social-icons .container {
+        text-align: center;
+    }
+
+        .career-social-icons .container * {
+            display: inline-block;
+        }
+
+        .career-social-icons .container img {
+            height: 25px;
+            padding-left: 5px;
+        }
+
+        .career-social-icons .container p {
+            padding-right: 1rem;
+        }
+
+#insta, #twitta {
+    height: 40px;
+}
+
+#twitta {
+    margin-left: -5px;
+}
+
+#linked-in {
+    padding-left: 10px;
+}
+
+.gray-break {
+    margin: 0;
+    margin-bottom: 2rem;
+    width: 100%;
+    background-color: rgba(204,204,204,.5);
+    text-align: center;
+    padding: 1rem;
+}
+
+    .gray-break .container span p {
+        font-size: 27px;
+        font-weight: bold;
+        padding: .5rem 0;
+    }
+
+.team-container {
+    width: 100%;
+}
+
+.team-video {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+
+    .team-video iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+.team-copy h3 {
+    padding-top: 2rem;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.team-video-info {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+    .team-video-info p {
+        padding: 0;
+        margin: 0;
+    }
+
+.headshot-info {
+    padding: 1rem;
+}
+
+    .headshot-info p {
+        color: rgb(102,102,102);
+        margin: 0;
+        padding: 0;
+        line-height: 21.6px;
+    }
+
+.team-headshot {
+    padding-right: 0;
+}
+
+    .team-headshot img {
+        float: none;
+    }
+
+.team-quote {
+    padding: 1rem;
+}
+
+    .team-quote p {
+        line-height: 21.6px;
+        margin: 0;
+        padding-bottom: 1rem;
+        font-style: italic;
+        color: rgb(102,102,102);
+    }
+
+    .team-quote a {
+        color: black;
+        text-decoration: none;
+    }
+
+        .team-quote a:hover {
+            color: #00A0BE;
+            text-decoration: underline;
+        }
+
+        .team-quote a::after {
+            content: url('../images/angle-right.svg');
+            display: inline-block;
+            -webkit-transition: all .25s;
+            Safari transition: all .25s;
+            width: 8px;
+            margin-left: .5rem;
+            vertical-align: middle;
+            padding-bottom: 2px;
+        }
+
+        .team-quote a:hover::after {
+            margin-left: 1rem;
+        }
+
+.pdf-links {
+    margin-top: 2rem;
+}
+
+.team-pdfs {
+    margin: 0;
+    padding: 0;
+}
+
+    .team-pdfs a {
+        color: black;
+        text-decoration: none;
+    }
+
+        .team-pdfs a:hover {
+            text-decoration: underline;
+            color: #00A0BE;
+        }
+
+    .team-pdfs li {
+        background: url("../images/PhotosHR/icons/pdfBullet.png") no-repeat top left;
+        margin: 0;
+        padding: 4px 0 4px 30px;
+        list-style: none;
+    }
+
+.icon-teams img {
+    display: block;
+    margin: auto;
+    margin-top: -.6rem;
+}
+
+#gradsandinterns .icon-teams img {
+    margin-top: 0;
+}
+
+@media (max-width: 1000px) {
+    .team-headshot img {
+        float: none;
+    }
+}
+
+#lisaSpan {
+    white-space: nowrap;
+}
+
+@media (max-width: 1200px) {
+    #lisaSpan {
+        white-space: normal;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .small-iframe {
+        width: 100%;
+    }
+}
+
+/*HEADER OUR TEAMS PAGE*/
+
+.sec-title {
+    text-align: center;
+    padding-bottom: 18px;
+}
+
+    .sec-title .header-line {
+        height: 2px;
+        width: calc( 100% - 30px );
+        display: block;
+        position: absolute;
+        top: 30px;
+        z-index: 20;
+        background-color: #fff;
+    }
+
+    .sec-title .header-line {
+        background-color: #00A0BE;
+    }
+
+.team-header {
+    margin: auto;
+}
+
+.sec-title h2 {
+    position: relative;
+    display: inline-block;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 40px;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 10px;
+    z-index: 40;
+    text-transform: uppercase;
+}
+
+    .sec-title h2.title-white {
+        color: #ffffff;
+        border-color: #ffffff;
+    }
+
+    .sec-title h2.title-white {
+        color: #000;
+        border-color: #000;
+    }
+
+    .sec-title h2.bkg-none {
+        background-color: transparent;
+    }
+
+.team-video video::-webkit-media-controls-panel {
+    background-image: linear-gradient(transparent, transparent) !important;
+}
+
+/*********************************************************************
+    ACCORDION STYLES
+    *********************************************************************/
+
+.accordion {
+    background-color: #EEEEEE;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    margin-top: 12px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+button.accordion.active {
+    background-color: #D4D4D4;
+    color: #444;
+}
+
+.accordion:before {
+    content: '\002B';
+    color: #55565a;
+    float: left;
+    display: table;
+    margin: 0 10px;
+    font-size: 51px;
+}
+
+.active:before {
+    content: "\2212";
+    color: #444;
+}
+
+.accordion strong {
+    display: table;
+}
+
+.panel {
+    padding-top: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    box-shadow: none;
+    border-bottom: none;
+}
+
+    .panel p {
+        margin-top: 5px
+    }
+
+.accordion-group-active .panel {
+    border-radius: 0%;
+}
+
+
+
+
+/*********************************************************************
+    MARRKETING BANNER
+    *********************************************************************/
+
+#mkt-banner {
+    margin-top: -21px;
+    position: relative;
+    background-color: transparent;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+
+
+    #mkt-banner.mktb-standard {
+    }
+
+
+.mktb-standard .mktb-mobile-bk {
+    display: block;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-color: transparent;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mktb-standard.mktb-default .mktb-mobile-bk {
+    height: 250px;
+}
+
+.mktb-standard .mktb-bk {
+    display: none;
+}
+
+.mktb-standard .container {
+    position: relative;
+    height: auto;
+    margin-top: -400px;
+}
+
+.mktb-standard.mktb-default .container {
+    margin-top: 0;
+}
+
+#mkt-banner .logo-abs-cont {
+    background: #fff;
+    padding: 15px;
+}
+
+#mkt-banner.mktb-standard .logo-abs-cont {
+    bottom: auto;
+    top: 250px;
+    left: 15px;
+}
+
+#mkt-banner.mktb-standard.mktb-default .logo-abs-cont {
+    top: 0;
+    left: 0;
+}
+
+#mkt-banner .logo-abs-cont {
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#mkt-banner.mktb-standard.mktb-default .logo-abs-cont {
+    position: relative;
+    text-align: center;
+}
+
+#mkt-banner .logo-abs-cont img {
+    height: 50px;
+    width: auto;
+}
+
+.mktbs-call-out {
+    background-color: transparent;
+    margin: 250px 15px 0;
+    padding: 32px 15px 30px;
+    border-bottom-width: 0;
+    border-bottom-style: none;
+}
+
+.mktb-standard .bar-btm {
+    width: 100%;
+    height: 3px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    margin-left: -20px;
+}
+
+.mktbs-call-out .mktbs-title {
+    color: #000;
+    font-size: 26px;
+    line-height: 31px;
+    font-weight: bold;
+    margin: 45px 0 20px;
+    display: block;
+}
+
+.mktbs-call-out p {
+    color: #000;
+    margin: 0 0 20px;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+a.btn-pp {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 7px 18px;
+    border-width: 2px;
+    border-style: solid;
+    -webkit-transition: all .25s;
+    transition: all .25s;
+}
+
+    a.btn-pp:hover {
+        background-color: #fff;
+    }
+
+.dark-text a.btn-pp {
+    color: #000;
+}
+
+
+#mkt-banner-lines {
+    margin-top: -21px;
+}
+
+.mktb-lines .top-line {
+    height: 10px;
+    width: 100%;
+    display: block;
+}
+
+.mktb-lines .btm-line {
+    height: 8px;
+    width: 100%;
+    display: block;
+}
+
+
+.mktb-lines .img-ves img {
+    display: block;
+    padding: 13px 0 7px;
+    margin: 0 auto;
+    height: 75px;
+}
+
+@media only screen and (min-width:768px) {
+    .mktb-standard.mktb-default .container {
+        margin-top: -50px;
+        padding-bottom: 0;
+    }
+
+    .mktb-standard .mktb-mobile-bk {
+        display: none;
+    }
+
+    .mktb-standard .mktb-bk {
+        display: block;
+        width: 100%;
+        height: 400px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #mkt-banner .logo-abs-cont {
+        bottom: initial;
+        top: 250px;
+        left: 15px;
+    }
+
+    #mkt-banner.mktb-standard.mktb-default .logo-abs-cont {
+        left: auto;
+    }
+
+    .mktb-standard.mktb-animation .mktb-bk {
+        height: 500px;
+    }
+
+    .mktb-standard.mktb-default .mktb-bk {
+        height: 250px;
+    }
+
+    .mktb-standard .container {
+        position: relative;
+        height: 400px;
+        margin-top: 0;
+        padding-bottom: 0;
+        overflow: hidden;
+    }
+
+    .mktb-standard.mktb-animation .container {
+        height: 500px;
+    }
+
+
+    .mktb-standard.mktb-default .container {
+        height: 250px;
+        margin-top: 0;
+    }
+
+
+    .mktbs-call-out {
+        width: 55%;
+        margin: 0;
+        position: absolute;
+        padding: 2em 4em;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #mkt-banner.mktb-standard.mktb-default .logo-abs-cont {
+        position: absolute;
+        text-align: left;
+    }
+
+    #mkt-banner .logo-abs-cont {
+        background: #fff;
+        padding: 15px 25px 7px;
+        position: absolute;
+        top: 0;
+        right: 10px;
+        left: auto;
+        -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.25);
+        -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.25);
+        box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.25);
+    }
+
+    #mkt-banner.mktb-standard .logo-abs-cont {
+        bottom: auto;
+        top: 0;
+        left: auto;
+    }
+
+    #mkt-banner .logo-abs-cont img {
+        height: 50px;
+        max-height: none;
+        width: auto;
+        max-width: none;
+    }
+
+    .mktbs-call-out .mktbs-title {
+        margin: 0 0 20px;
+    }
+
+    .mktb-lines .img-ves img {
+        float: right;
+        margin: 0 20px 0 0;
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .mktbs-call-out {
+        width: 45%;
+    }
+
+    #mkt-banner {
+        margin-top: -14px;
+    }
+
+    .mktbs-call-out {
+        top: 52%;
+        transform: translateY(-50%);
+        left: 18%;
+    }
+
+    #mkt-banner.mktb-lines {
+        margin-bottom: 25px;
+    }
+
+    .mktb-lines .top-line {
+        height: 6px;
+    }
+
+    .mktb-lines .btm-line {
+        height: 8px;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .mktb-standard .mktbs-call-out {
+        width: 40%;
+    }
+}
+
+.careerlink {
+    background-color: none !important;
+    box-shadow: none !important;
+    text-decoration: underline;
+    color: #000066;
+    cursor: pointer;
+}
+
+    .careerlink:hover {
+        background-color: none !important;
+        box-shadow: none !important;
+        text-decoration: none;
+        color: #000066;
+        cursor: pointer;
+    }
+
+
+a.btn-pp {
+    display: block;
+    margin: 25px 0 10px;
+    text-align: center;
+    max-width: 350px;
+}
+
+a.btn-pp {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+a.pc-bkg {
+    background-color: #3f97cc;
+}
+
+a.pc-border {
+    border-color: #3f97cc;
+}
+
+a.btn-label-dwld {
+    display: block;
+    margin-bottom: 15px;
+    padding-left: 40px;
+    position: relative;
+    max-width: 160px;
+    -webkit-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
+}
+
+    a.btn-label-dwld span svg {
+        fill: #fff;
+        height: 30px;
+        width: 24px;
+    }
+
+    a.btn-label-dwld span {
+        position: absolute;
+        top: 5px;
+        left: 6px;
+    }
+
+.pc-color-hover:hover {
+    color: #3f97cc !important;
+    border-color: #3f97cc !important;
+}
+
+.pc-fill-hover:hover svg, .label-detail-single.active svg {
+    fill: #3f97cc;
+}
+
+#global-leader {
+    margin-top: 2rem;
+}
+
+
+
+@media (min-width:1025px) {
+    .move {
+        margin-left: 12.5%;
+    }
+
+    .marginBottomLarge {
+        margin-bottom: 5.3em;
+    }
+
+    .marginBottomLarge2 {
+        margin-bottom: 2.4em;
+    }
+
+    .marginBottomLarge3 {
+        margin-bottom: 8.2em;
+    }
+}
+
+@media (min-width:1900px) {
+    .abso1,
+    .abso2,
+    .abso3,
+    .abso4 {
+        max-height: 18em;
+        top: calc(50% - 9em);
+    }
+
+    .abso3 {
+        right: 21%;
+    }
+
+    .abso2 {
+        max-height: 20em;
+        top: calc(50% - 10em);
+    }
+}
+
+@media (max-width:1555px) and (min-width:1415px) {
+    .abso1,
+    .abso2,
+    .abso3,
+    .abso4 {
+        max-height: 13em;
+        top: calc(50% - 7em);
+    }
+}
+
+@media (max-width:1414px) and (min-width:1214px) {
+    .abso2 {
+        display: none
+    }
+
+    .mktbs-call-out {
+        left: 22%;
+    }
+
+    .abso3 {
+        max-height: 15em;
+        position: absolute;
+        top: calc(50% - 7em);
+        right: 25%;
+    }
+}
+
+@media (max-width:1213px) and (min-width:768px) {
+    .abso2,
+    .abso3 {
+        display: none
+    }
+
+    .mktbs-call-out {
+        left: 25%;
+    }
+
+    .abso1,
+    .abso4 {
+        max-height: 12em;
+        top: calc(50% - 6em);
+    }
+
+    .mktbs-call-out {
+        left: 24%;
+        padding: 2em 5em;
+    }
+}
+
+@media (max-width:991px) {
+
+    .circles p {
+        padding: 0em 0em;
+    }
+
+    .tradeGrid img {
+        width: 100%
+    }
+
+    .tradesBlocks {
+        margin-top: 1em;
+        margin-bottom: 5em;
+        padding: 0em 1.5em
+    }
+
+        .tradesBlocks .mt-5 {
+            margin-top: 1rem;
+        }
+
+    .circles .col-lg-4 {
+        padding: 1em 1em;
+    }
+
+    #students img {
+        width: 100%;
+    }
+
+    .full-width-hero.students {
+        background-position: center;
+        background-image: url('https://assets.syngentaebiz.com/images/media/mobilestudent.png');
+        margin-bottom: 1.5em
+    }
+
+    .full-width-hero.internships {
+        background-position: center;
+        background-image: url('https://assets.syngentaebiz.com/images/media/studentmobile.png');
+        margin-bottom: 1.5em
+    }
+
+    .full-width-hero.sales {
+        background-position: center;
+        background-image: url('https://assets.syngentaebiz.com/images/media/salesmobile.png');
+        margin-bottom: 1.5em
+    }
+
+    .full-width-hero.production {
+        background-position: center;
+        background-image: url('https://assets.syngentaebiz.com/images/media/prodmobile.png');
+        margin-bottom: 1.5em
+    }
+
+
+
+
+    .blueColor {
+        background: #00A0BE;
+        padding: 2em;
+        position: relative;
+        margin-bottom: 10em;
+    }
+
+        .blueColor.last {
+            margin-bottom: 0em
+        }
+
+
+    .quote {
+        margin-top: 15%;
+    }
+
+    #contact {
+        margin-top: 0em;
+    }
+}
+
+@media (max-width:767px) {
+
+    .abso6 {
+        max-height: 9em;
+        position: absolute;
+        top: -2em;
+        left: calc(50% - 4.5em);
+    }
+
+    .abso7 {
+        position: relative;
+        margin-top: 8em;
+        left: calc(50% - 1.8em);
+        margin-bottom: 0;
+    }
+
+    .blueQuote {
+        text-align: center;
+    }
+
+        .blueQuote.sales {
+            margin-top: 4em
+        }
+
+    .production {
+        text-align: center;
+    }
+
+    #job a {
+        font-size: 17px;
+        padding: 0.7rem 2rem;
+    }
+
+    .shadow-link.smallerLink {
+        max-width: 60%;
+        margin: 0 20%;
+    }
+
+    #job {
+        background: #F6F6F6;
+        padding: 0em 1em;
+        margin-top: 0em
+    }
+
+    .prod .mt-5 {
+        margin-top: 1rem;
+    }
+
+    .prod .mb-0 {
+        margin-bottom: 0.5em;
+    }
+
+
+    .quote {
+        margin-top: 35%;
+    }
+
+    .abso2,
+    .abso3 {
+        display: none
+    }
+
+    .abso1,
+    .abso1, .abso4 {
+        max-height: 9em;
+        top: unset;
+        margin-top: 3em;
+        position: absolute;
+    }
+
+    .abso1 {
+        left: 4%
+    }
+
+    .abso4 {
+        right: 4%;
+    }
+
+    .full-width-hero {
+        background: white;
+        height: 260px;
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        margin-bottom: 22em;
+    }
+
+    .mktbs-call-out {
+        background-color: white;
+        margin: 250px 15px 0;
+        padding: 2em;
+        border-bottom-width: 0;
+        border-bottom-style: none;
+        -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+        -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+        box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+    }
+
+    .container {
+        overflow: visible;
+    }
+
+    .social i {
+        margin: 0.25em 0.35em;
+    }
+
+    .social .d-flex {
+        flex-wrap: wrap;
+    }
+
+    #contact {
+        margin-top: 2em;
+    }
+
+    .mktbs-call-out .mktbs-title {
+        margin: 1em 0em;
+    }
+
+    .blueColor.last {
+        margin-bottom: 0em
+    }
+
+    .full-width-hero.professionals {
+        margin-bottom: 1em;
+        background-image: url('https://assets.syngentaebiz.com/images/media/profmobile.png')
+    }
+
+    .tradeGrid {
+        padding: 0em 1em
+    }
+
+    .greyBackground {
+        margin: 0em 1em;
+    }
+
+    .mobileReverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .image1 {
+        background-image: url('https://assets.syngentaebiz.com/images/media/egrybi.png');
+        margin-bottom: 1em
+    }
+
+    .image2 {
+        background-image: url('https://assets.syngentaebiz.com/images/media/g3q4agerwdsv.png');
+        margin-bottom: 1em
+    }
+
+    .image3 {
+        background-image: url('https://assets.syngentaebiz.com/images/media/wergw.png');
+        margin-bottom: 1em
+    }
+
+    .image4 {
+        background-image: url('https://assets.syngentaebiz.com/images/media/weggwe.png');
+        margin-bottom: 1em
+    }
+
+
+    .image5 {
+        background-image: url('https://assets.syngentaebiz.com/images/media/pro_it_header_1343240867.png');
+        margin-bottom: 1em
+    }
+
+    .image6 {
+        background-image: url('https://assets.syngentaebiz.com/images/media/sfevds.png');
+        margin-bottom: 1em
+    }
+
+    .image7 {
+        background-image: url('https://assets.syngentaebiz.com/images/media/sdv.png');
+        margin-bottom: 1em
+    }
+
+    .circles {
+        margin: 3em 0em;
+    }
+
+    .container.ipn-ele.prod {
+        padding: 0em 1.5em
+    }
+
+    .blueQuote p {
+        padding: 0em 0.5em;
+    }
+
+    .large {
+        font-size: 25px
+    }
+
+    .circles .large.mb-5 {
+        margin-bottom: 2rem;
+    }
+}
